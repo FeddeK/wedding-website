@@ -5,7 +5,7 @@
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418; 
-  --transition-speed: 600ms;
+  --transition-speed: 200ms;
 }
 
 body {
@@ -29,15 +29,48 @@ body::-webkit-scrollbar-thumb {
 
 
 main {
-    margin-left: 5rem;
-    padding: 1rem;
+    /* margin-left: 15rem;
+    margin-right: 15rem;
+    padding: 1rem; */
+    display: grid;
+    grid-template-areas:
+      "left headpic right"
+      "left content right";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 25%, 75%;     
+    justify-items: center;
+    align-items: center;
+  }
+
+header  {
+  grid-area: headpic;
+  object-fit: scale-down;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+article {
+  grid-area: content;
+  background-color: white;
+}
+
+#feat-pic1 {
+  border-radius: var(--main-radius);
+  /*padding-left: var(--main-padding);*/
+  border: var(--main-border);
+  grid-area: feat-pic1;
+}
+.img-container { overflow: hidden; }
+.img-container img {
+  width: 100%; 
+  display: block;
 }
 
 .navbar {
     height: 100vh;
     position: fixed;
     background-color: var(--bg-primary);
-    transition: width 600ms ease;
+    transition: width 200ms ease;
 }
 
 .navbar-nav {
@@ -120,6 +153,18 @@ main {
     transform: rotate(-180deg);
   }
 
+iframe {
+    display: block;
+    border-style:none;
+}
+
+div, iframe {
+  width: 500;
+  height: 500;
+  margin: 0 auto;
+}
+
+  
 /* Small screens */
 @media only screen and (max-width: 600px) {
     .navbar {
@@ -143,6 +188,11 @@ main {
     main {
       margin: 0;
     }
+    header {
+      height: 100%;
+      width: 100%;
+    }
+
   }
   
   /* Large screens */
@@ -172,3 +222,44 @@ main {
     }
   }
   
+  /* .photo-grid {
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 100vh;
+    grid-auto-rows: 240px;
+  } */
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+  
+ 
+  
+  /* Medium screens */
+  @media screen and (min-width: 600px) {
+    .card-tall {
+      grid-row: span 2 / auto;
+      grid-column: span 2 / auto;
+    }
+  
+    .card-wide {
+      grid-row: span 2 / auto;
+      grid-column: span 1 / auto;
+    }
+  }
