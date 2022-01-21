@@ -11,16 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a3f61b9bb2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-      <script>
-        $(function(){
-          $("#nav-placeholder").load("nav.html");
-        });
-        </script>
 </head>
 
 <body>
 
-  <!--Navigation bar-->
+      <!--Navigation bar-->
   <nav class="navbar">
     <ul class="navbar-nav">
     <li class="logo">
@@ -85,31 +80,34 @@
   <!--end of Navigation bar-->
 
     <main>
-      <header>
-        <div id="feat-pic1" class='img-container'><img src='pics/ranch.jpg'></div>
-      </header>
-      <article>
-        <p>
-            <h2>The Venue</h2>
-            We're getting married in Golden, Colorado. About 40 minute drive from Denver Airport. The adress is: 403 Blue Ridge Road, Golden, Co 80401.
-        </p>
-        <p>
-            <h2>Hotels near by</h2>
-            <a href="https://www.originhotel.com/hotels/red-rocks?utm_source=google&utm_medium=organic&utm_campaign=business_listing">Origin Hotel Red Rocks</a> is a 10 minute uber from our venue. There are other places close by too.   
-        </p>
-        <p>
-            <h2>Getting there</h2>
-            There is a busline that stops a 10 minute walk from the venue and the venue is accesible by both lift en uber. There is limit parking available on the venue, so carpooling is highly recommended.
-        </p>
-        <p>
-            <h2>Camping</h2>
+        <div class="grid">
+            <div class="span-col-3 span-row-3 header">
+                <img src="pics/ranch.jpg">
+                <div class="text">
+                    <h2>Location</h2>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="pics/2.jpg">
+            </div>
+            <div class="span-col-2">
+                <h3>The Venue</h3>
+                We're getting married in Golden, Colorado. About 40 minute drive from Denver Airport. The adress is: 403 Blue Ridge Road, Golden, Co 80401.</div>
+            <div class="span-col-2">
+                <h2>Hotels near by</h2>
+            <a href="https://www.originhotel.com/hotels/red-rocks?utm_source=google&utm_medium=organic&utm_campaign=business_listing">Origin Hotel Red Rocks</a> is a 10 minute uber from our venue. There are other places close by too.
+            </div>
+            <div class="card-pic"><h2>Getting there</h2>
+                There is a busline that stops a 10 minute walk from the venue and the venue is accesible by both lift en uber. There is limit parking available on the venue, so carpooling is highly recommended.</div>
+                <div class="photo">
+                    <img src="pics/tent.jpg">
+                </div>
+            <div class="span-col-2">
+                <h2>Camping</h2>
             Can I camp on the venue? Yes, you can! There is plenty of space available for you to pitch your tent and we should have room for some RV's. Please contact us if your planning on camping here, so we know how many people to expect. We have the place from the 28th of july until the 30th. You're welcome to camp for the extra days. 
             You have to bring your own food and drinks for the non-wedding days. But there are four big grills to heat any food on. Please mind that we have to be out on 10.00 on Sunday and the place has to be tidy.
-        </p>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.4091425723022!2d-105.27709468462554!3d39.70798697945386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b9b84fd016825%3A0x84b5eb3304a6f997!2s403%20Blue%20Ridge%20Rd%2C%20Golden%2C%20CO%2080401!5e0!3m2!1sen!2sus!4v1642182727179!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>    
         </div>
-        </article>
     </main>
 </body>
 </html>
