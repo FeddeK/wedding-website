@@ -31,13 +31,18 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+    background: var(--color5);
 }
 
 div div{
   background-color: var(--bg-page2);
   margin: 0;
   padding-inline: 0px;
+}
+
+.maps{
+  justify-content: center;
+  justify-self: center;
 }
 
 .text {
@@ -120,6 +125,14 @@ div div{
   justify-self: center;
   align-self: center;
   text-align: center;
+  padding:20px;
+}
+
+.span-col-3-block{
+  grid-column: span 3 / auto;
+  background-color:var(--bg-page2);
+  text-align: center;
+  padding:20px;
 }
 
 .bg1{
@@ -142,6 +155,18 @@ div div{
   background-color: var(--color5);
 }
 
+.bg6{
+  background-color: var(--bg-page2);
+}
+
+.bg7{
+  background-color: var(--bg-page1);
+}
+
+.tc3{
+  color: var(--color3);
+}
+
 .span-col-2{
   grid-column: span 2 / auto;
   padding: 20px;
@@ -150,7 +175,6 @@ div div{
 .card-pic{grid-column: span 1 / auto;}
 
 .span-row-3{grid-row: span 3 / auto;}
-
 
 .navbar {
     height: 100vh;
@@ -261,11 +285,21 @@ div, iframe {
 
   .card-pic{grid-column: span 3/auto;}
 
-  .span-col-3{grid-column: span 3 / auto;}
+  .span-col-3{grid-column: span 5 / auto;}
+
+  .card-pic{grid-column: span 5 / auto;
+    padding:10px;
+    background-color: var(--bg-page1);}
+
+  .span-col-3-block{grid-column: span 5 / auto;
+  grid-row: span 2/auto;}
 
   .span-col-2{grid-column: span 5 / auto;
   padding:10px;
-  background-color: var(--bg-page1);}
+  padding-bottom: 80px;
+  background-color: var(--bg-page1);
+  justify-items: center;
+  align-self: center;}
   
   .span-row-3{grid-row: span 3 / auto;}
   
