@@ -41,8 +41,13 @@ div div{
 }
 
 .maps{
+  grid-column: span 3 / auto;
+  background-color:var(--bg-page2);
+  text-align: center;
   justify-content: center;
   justify-self: center;
+  padding: 0px;
+  position: relative;
 }
 
 .text {
@@ -135,6 +140,14 @@ div div{
   padding:20px;
 }
 
+.span-map{
+  grid-column: span 3 / auto;
+  grid-row: span 2 / auto;
+  background-color:var(--bg-page1);
+  text-align: center;
+  padding:0px;
+}
+
 .bg1{
   background-color: var(--color1);
 }
@@ -172,7 +185,8 @@ div div{
   padding: 20px;
 }
 
-.card-pic{grid-column: span 1 / auto;}
+.card-pic{grid-column: span 1 / auto;
+  padding: 20px;}
 
 .span-row-3{grid-row: span 3 / auto;}
 
@@ -215,7 +229,7 @@ div div{
 }
 
 .link-text {
-    display: none;
+    /* display: none; */
     margin-left: 1rem;
 }
 
@@ -294,6 +308,17 @@ div, iframe {
   .span-col-3-block{grid-column: span 5 / auto;
   grid-row: span 2/auto;}
 
+  .span-map{
+  grid-column: span 5 / auto;
+  grid-row: span 2/auto;
+  }
+
+  .maps{
+    grid-column: span 5 / auto;
+    padding: 0px;
+    /* grid-row: span 2/auto; */
+  }
+
   .span-col-2{grid-column: span 5 / auto;
   padding:10px;
   padding-bottom: 80px;
@@ -355,20 +380,5 @@ div, iframe {
     .navbar:hover .logo-text
     {
       left: 0px;
-    }
-  }
-  
- 
-  
-  /* Medium screens */
-  @media screen and (min-width: 600px) {
-    .card-tall {
-      grid-row: span 2 / auto;
-      grid-column: span 2 / auto;
-    }
-  
-    .card-wide {
-      grid-row: span 2 / auto;
-      grid-column: span 1 / auto;
     }
   }
