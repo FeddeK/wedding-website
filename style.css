@@ -85,6 +85,7 @@ div div{
     grid-gap: 0px;
     row-gap: 20px;
     text-align: center;
+    padding-bottom: 20px;
     /* max-width: 1000px; */
     /* min-width: 600px; */
   }
@@ -95,6 +96,9 @@ div div{
   background-color: var(--bg-page1);
   padding-inline: 0px;
   width: 100%;
+  display: inline-block;
+  overflow-wrap: normal;
+  white-space: nowrap;
 }
 
 .header >img{
@@ -293,6 +297,10 @@ div, iframe {
 /* Small screens */
 @media only screen and (max-width: 600px) {
 
+  .grid{
+    padding-bottom: 80px;
+  }
+
   .side{display: none;}
 
   .photo{display: none;}
@@ -322,9 +330,10 @@ div, iframe {
   .span-col-2{grid-column: span 5 / auto;
   padding:10px;
   padding-bottom: 80px;
-  background-color: var(--bg-page1);
-  justify-items: center;
-  align-self: center;}
+  /* background-color: var(--bg-page1); */
+  /* justify-items: center; */
+  /* align-self: center; */
+}
   
   .span-row-3{grid-row: span 3 / auto;}
   
@@ -353,6 +362,21 @@ div, iframe {
       height: 100%;
       width: 100%;
     }
+    .header .header-text{
+      letter-spacing: -1px;  
+      padding-bottom: 40px;
+      line-height: 5px;
+      position: absolute;
+      object-fit: cover;
+      top: 360px;
+      left: 0px;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      color: var(--bg-page1);
+      background: rgba(0, 0, 0, 0.7);
+    }
+    
 
   }
   
