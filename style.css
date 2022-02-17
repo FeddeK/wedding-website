@@ -184,6 +184,10 @@ div div{
   color: var(--color3);
 }
 
+.tc2{
+  color: var(--bg-page1);
+}
+
 .span-col-2{
   grid-column: span 2 / auto;
   padding: 20px;
@@ -298,7 +302,7 @@ div, iframe {
 @media only screen and (max-width: 600px) {
 
   .grid{
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   .side{display: none;}
