@@ -20,6 +20,7 @@ body {
     background-color: var(--bg-page1);
     margin: 0;
     padding: 0;
+    /* background-image: url('pics/space_r.png'); */
 }
 
 body::-webkit-scrollbar {
